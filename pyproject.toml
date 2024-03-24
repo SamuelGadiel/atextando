@@ -1,0 +1,25 @@
+[tool.poetry]
+version = "1.0.0"
+name = "atextando"
+description = "Projeto de automação para o perfil Atextando no instagram"
+authors = ["SamuelGadiel <samuelgadiel@gmail.com>"]
+repository = "https://github.com/SamuelGadiel/atextando"
+
+license = "MIT"
+readme = "README.md"
+
+packages = [{ include = "src" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pillow = "^10.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+app = "src.__init__:main"
